@@ -68,7 +68,7 @@ namespace WebApi_Control_Production.Controllers
 				{
 					_response.Result = model;
 					_response.DisplayMessage = "Registro Creado";
-					return CreatedAtAction("GetCliente", new { Id = model.id }, _response);
+					return Ok(_response);
 				}
 				_response.DisplayMessage = "Error interno";
 				return BadRequest(_response);
