@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "SwMmhcxYplv9KgZx4wB2GWa+roQG3e4NPXtnMvPAGzo=",
+  "Source": "WebApi_Control_Production",
+  "BasePath": "_content/WebApi_Control_Production",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
