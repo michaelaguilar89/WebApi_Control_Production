@@ -1,27 +1,79 @@
-﻿using WebApi_Control_Production.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using WebApi_Control_Production.Connection;
+using WebApi_Control_Production.Models;
 
 namespace WebApi_Control_Production.Repository_s
 {
 	public class ProductionRepository : IProductionRepositorio
 	{
-		public Task<string> CreateUpdate(Production prod)
+		private readonly ApplicationDbContext _db;
+		public ProductionRepository(ApplicationDbContext db)
 		{
-			throw new NotImplementedException();
+			_db = db;
 		}
 
-		public Task<string> Delete(int id)
+		public async Task<string> CreateUpdate(Production prod)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				string mensaje = "";
+				if (prod.id>0)
+				{
+					_db.productions.Update(prod);
+					mensaje = "update";
+				}
+				else
+				{
+					_db.productions.AddAsync(prod);
+					mensaje = "create";
+				}
+				await _db.SaveChangesAsync();
+				return mensaje;
+			}
+			catch (Exception )
+			{
+
+				string mensaje = "-500";
+				return mensaje;
+			}
 		}
 
-		public Task<Production> GetProductionById(int id)
+		public async Task<string> Delete(int id)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				string mensaje = "";
+				Production production = await _db.productions.FindAsync(id);
+				if (production != null)
+				{
+					_db.Remove(production);
+					_db.SaveChangesAsync();
+					mensaje = "delete";
+					return mensaje;
+				}
+				mensaje = "El record no exixte";
+				return mensaje;
+			}
+			catch (Exception)
+			{
+				string mensaje = "-500";
+				return mensaje;
+			}
 		}
 
-		public Task<List<Production>> GetProductions(DateTime date)
+		public async Task<Production> GetProductionById(int id)
 		{
-			throw new NotImplementedException();
+			Production production = await _db.productions.FindAsync(id);
+			return production;
+		}
+
+		public async Task<List<Production>> GetProductions(DateTime date)
+		{
+
+			List<Production> lista = await _db.productions.Where(
+				x => x.fecha == date).OrderBy(x=>x.horaInicio).ToListAsync();
+				return lista;
+			
 		}
 	}
 }
