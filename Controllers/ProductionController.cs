@@ -18,15 +18,15 @@ namespace WebApi_Control_Production.Controllers
 			_response = new myResponse();
 		}
 		[HttpGet("{id}")]
-		public async Task< ActionResult> GetProductionById(int id)
+		public async Task<ActionResult> GetProductionById(int id)
 		{
 			try
 			{
 				Production model = await _production.GetProductionById(id);
-				if (model ==null)
+				if (model == null)
 				{
 					_response.DisplayMessage = "El registro consultado no existe";
-					return Ok(_response); 
+					return Ok(_response);
 				}
 				_response.Result = model;
 				_response.DisplayMessage = "Registro Id : " + id;
@@ -34,12 +34,30 @@ namespace WebApi_Control_Production.Controllers
 			}
 			catch (Exception e)
 			{
-				_response.DisplayMessage = "Error al obtener el registro Id : "+id;
+				_response.DisplayMessage = "Error al obtener el registro Id : " + id;
 				_response.ErrorMessages = new List<string> { e.ToString() };
 				return BadRequest(_response);
 			}
 		}
 		[HttpGet]
+		public async Task<ActionResult> Get()
+		{
+			try
+			{
+				var list = await _production.Get();
+				_response.Result = list;
+				_response.DisplayMessage = "List of Production";
+				return Ok(_response);
+			}
+			catch (Exception e)
+			{
+				_response.DisplayMessage = "Error, cannot get Data";
+				_response.ErrorMessages = new List<string> { e.ToString() };
+				return BadRequest(_response);
+			}
+		}
+
+		[HttpGet("{date}")]
 		public async Task<ActionResult<IEnumerable<Production>>> GetProduction(DateTime date)
 		{
 			try
@@ -51,6 +69,8 @@ namespace WebApi_Control_Production.Controllers
 			}
 			catch (Exception e)
 			{
+
+				_response.DisplayMessage = "Error, cannot get Data of : "+date;
 
 				_response.ErrorMessages = new List<string> { e.ToString() };
 				return BadRequest(_response);

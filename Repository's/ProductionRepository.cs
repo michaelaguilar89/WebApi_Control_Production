@@ -60,7 +60,11 @@ namespace WebApi_Control_Production.Repository_s
 				return mensaje;
 			}
 		}
-
+		public async Task<List<Production>> Get()
+		{
+			var list = await _db.productions.ToListAsync();
+			return list;
+		}
 		public async Task<Production> GetProductionById(int id)
 		{
 			Production production = await _db.productions.FindAsync(id);
