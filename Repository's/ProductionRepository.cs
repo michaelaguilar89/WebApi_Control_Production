@@ -24,7 +24,7 @@ namespace WebApi_Control_Production.Repository_s
 				}
 				else
 				{
-					_db.productions.AddAsync(prod);
+					await _db.productions.AddAsync(prod);
 					mensaje = "create";
 				}
 				await _db.SaveChangesAsync();
@@ -71,7 +71,7 @@ namespace WebApi_Control_Production.Repository_s
 			return production;
 		}
 
-		public async Task<List<Production>> GetProductions(DateTime date)
+		public async Task<List<Production>> GetProductionsByDate(DateTime date)
 		{
 
 			List<Production> lista = await _db.productions.Where(

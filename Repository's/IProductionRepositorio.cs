@@ -4,7 +4,7 @@ namespace WebApi_Control_Production.Repository_s
 {
 	public interface IProductionRepositorio
 	{
-		Task<List<Production>> GetProductions(DateTime date);
+		Task<List<Production>> GetProductionsByDate(DateTime date);
 		Task<List<Production>> Get();
 		Task<Production> GetProductionById(int id);
 

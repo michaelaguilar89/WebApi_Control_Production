@@ -8,6 +8,7 @@ namespace WebApi_Control_Production.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
+
 	public class ProductionController : ControllerBase
 	{
 		private readonly IProductionRepositorio _production;
@@ -17,11 +18,16 @@ namespace WebApi_Control_Production.Controllers
 			_production = production;
 			_response = new myResponse();
 		}
-		[HttpGet("{id}")]
-		public async Task<ActionResult> GetProductionById(int id)
+		//[HttpGet("{id}")]
+		
+		/*public async Task<ActionResult> GetProductionById(int id)
 		{
 			try
 			{
+				if (id!=null)
+				{
+
+				}
 				Production model = await _production.GetProductionById(id);
 				if (model == null)
 				{
@@ -38,9 +44,10 @@ namespace WebApi_Control_Production.Controllers
 				_response.ErrorMessages = new List<string> { e.ToString() };
 				return BadRequest(_response);
 			}
-		}
+		}*/
 		[HttpGet]
-		public async Task<ActionResult> Get()
+		//[Route("GetAll")]
+		public async Task<ActionResult> GetAll()
 		{
 			try
 			{
@@ -62,7 +69,7 @@ namespace WebApi_Control_Production.Controllers
 		{
 			try
 			{
-				var list = await _production.GetProductions(date);
+				var list = await _production.GetProductionsByDate(date);
 				_response.Result = list;
 				_response.DisplayMessage = "List of " + date;
 				return Ok(_response);
