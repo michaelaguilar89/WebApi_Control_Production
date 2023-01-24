@@ -65,11 +65,12 @@ namespace WebApi_Control_Production.Controllers
 		}
 
 		[HttpGet("{date}")]
-		public async Task<ActionResult<IEnumerable<Production>>> GetProduction(DateTime date)
+		public async Task<ActionResult<IEnumerable<Production>>> GetProduction(string date)
 		{
 			try
 			{
-				var list = await _production.GetProductionsByDate(date);
+				DateTime newDate = Convert.ToDateTime(date);
+				var list = await _production.GetProductionsByDate(newDate);
 				_response.Result = list;
 				_response.DisplayMessage = "List of " + date;
 				return Ok(_response);
