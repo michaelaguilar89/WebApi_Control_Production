@@ -1,9 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "VhF2YOX+qkPWWII5MZtmrnkrFIkEgOz6dBXnuFbs2IKM8juCYeOsncCsOEeL6TR2UJgiD49AnsIqYFlWaZRC2w==",
+  "dgSpecHash": "Fje1oMPXfyshXZShwB7MJmmEj54S7kVN6jSDcUTl7EVEpd/aBb9wh+an6kKFEUE4OkTHUJyfEI2cHBPTUA9QYw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mchla\\OneDrive\\Documentos\\Proyectos\\WebApi_Control_Production\\WebApi_Control_Production.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mchla\\.nuget\\packages\\amazon.lambda.apigatewayevents\\2.5.0\\amazon.lambda.apigatewayevents.2.5.0.nupkg.sha512",
+    "C:\\Users\\mchla\\.nuget\\packages\\amazon.lambda.applicationloadbalancerevents\\2.1.0\\amazon.lambda.applicationloadbalancerevents.2.1.0.nupkg.sha512",
+    "C:\\Users\\mchla\\.nuget\\packages\\amazon.lambda.aspnetcoreserver\\7.3.0\\amazon.lambda.aspnetcoreserver.7.3.0.nupkg.sha512",
+    "C:\\Users\\mchla\\.nuget\\packages\\amazon.lambda.core\\2.1.0\\amazon.lambda.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\mchla\\.nuget\\packages\\amazon.lambda.logging.aspnetcore\\3.1.0\\amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512",
+    "C:\\Users\\mchla\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.3.0\\amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512",
     "C:\\Users\\mchla\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mchla\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\mchla\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
