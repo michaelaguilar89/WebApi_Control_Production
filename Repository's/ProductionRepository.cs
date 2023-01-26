@@ -47,7 +47,7 @@ namespace WebApi_Control_Production.Repository_s
 				if (production != null)
 				{
 					_db.Remove(production);
-					_db.SaveChangesAsync();
+					await _db.SaveChangesAsync();
 					mensaje = "delete";
 					return mensaje;
 				}
