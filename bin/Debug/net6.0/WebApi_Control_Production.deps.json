@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "WebApi_Control_Production/1.0.0": {
         "dependencies": {
-          "Amazon.Lambda.AspNetCoreServer": "7.3.0",
           "Microsoft.EntityFrameworkCore": "6.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.13",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.13",
@@ -16,70 +15,6 @@
         },
         "runtime": {
           "WebApi_Control_Production.dll": {}
-        }
-      },
-      "Amazon.Lambda.APIGatewayEvents/2.5.0": {
-        "runtime": {
-          "lib/netcoreapp3.1/Amazon.Lambda.APIGatewayEvents.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.2.0.0"
-          }
-        }
-      },
-      "Amazon.Lambda.ApplicationLoadBalancerEvents/2.1.0": {
-        "runtime": {
-          "lib/netcoreapp3.1/Amazon.Lambda.ApplicationLoadBalancerEvents.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "Amazon.Lambda.AspNetCoreServer/7.3.0": {
-        "dependencies": {
-          "Amazon.Lambda.APIGatewayEvents": "2.5.0",
-          "Amazon.Lambda.ApplicationLoadBalancerEvents": "2.1.0",
-          "Amazon.Lambda.Core": "2.1.0",
-          "Amazon.Lambda.Logging.AspNetCore": "3.1.0",
-          "Amazon.Lambda.Serialization.SystemTextJson": "2.3.0"
-        },
-        "runtime": {
-          "lib/net6.0/Amazon.Lambda.AspNetCoreServer.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.4.0"
-          }
-        }
-      },
-      "Amazon.Lambda.Core/2.1.0": {
-        "runtime": {
-          "lib/net6.0/Amazon.Lambda.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Amazon.Lambda.Logging.AspNetCore/3.1.0": {
-        "dependencies": {
-          "Amazon.Lambda.Core": "2.1.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Amazon.Lambda.Logging.AspNetCore.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
-          }
-        }
-      },
-      "Amazon.Lambda.Serialization.SystemTextJson/2.3.0": {
-        "dependencies": {
-          "Amazon.Lambda.Core": "2.1.0"
-        },
-        "runtime": {
-          "lib/net6.0/Amazon.Lambda.Serialization.SystemTextJson.dll": {
-            "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.0.0.0"
-          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -559,48 +494,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "Amazon.Lambda.APIGatewayEvents/2.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-u2M1e8e+eahgwSpa2jhBaakH37EgIZcHqmqpK/9DD/PMygxK5g7LPyUl6SRFnVnmVyD0zvjEh8lYnpYULY6WIQ==",
-      "path": "amazon.lambda.apigatewayevents/2.5.0",
-      "hashPath": "amazon.lambda.apigatewayevents.2.5.0.nupkg.sha512"
-    },
-    "Amazon.Lambda.ApplicationLoadBalancerEvents/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lxOKr4kuooqQV84YsNjgrJp7c4lcYDe+RPIMcdvpLEM6XlLzar38OoG4DeCdzsgnxy0aFQ25nzaDUnrqjIFC/A==",
-      "path": "amazon.lambda.applicationloadbalancerevents/2.1.0",
-      "hashPath": "amazon.lambda.applicationloadbalancerevents.2.1.0.nupkg.sha512"
-    },
-    "Amazon.Lambda.AspNetCoreServer/7.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Y6q+p9pIQTYGJt/8Hziw4aHEqKKgi0B3LC/1itMlA0LbmePTFGlxKBfiSFuq6R2Ex7BeLZw4Ei9uFy9mqlxjpA==",
-      "path": "amazon.lambda.aspnetcoreserver/7.3.0",
-      "hashPath": "amazon.lambda.aspnetcoreserver.7.3.0.nupkg.sha512"
-    },
-    "Amazon.Lambda.Core/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ok06UhfBZw6j6+PhiJR9C0EOMuJvnq8rMCHVkaFmPFrlI/q447ukwGZQKaAKqodV+MNTfpb/iPxjgUPVbSlVVw==",
-      "path": "amazon.lambda.core/2.1.0",
-      "hashPath": "amazon.lambda.core.2.1.0.nupkg.sha512"
-    },
-    "Amazon.Lambda.Logging.AspNetCore/3.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-4SD+db3WUBMTl+0p/4C2/zalkG2gMFc9PYwLv4UGPkq6WUlek9hmom0igKkcGY5/1uprEdG/zQ5abKUfs6z0dQ==",
-      "path": "amazon.lambda.logging.aspnetcore/3.1.0",
-      "hashPath": "amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512"
-    },
-    "Amazon.Lambda.Serialization.SystemTextJson/2.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-qgFCDJp5lyUNqCq1z18U7fZ/+rmMyw6RJf9nKfnJrf79YupDj02klQAjxymEYN66NykWXyc68SGkow6fy53hfg==",
-      "path": "amazon.lambda.serialization.systemtextjson/2.3.0",
-      "hashPath": "amazon.lambda.serialization.systemtextjson.2.3.0.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",
