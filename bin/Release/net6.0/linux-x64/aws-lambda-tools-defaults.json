@@ -1,8 +1,0 @@
-
-{
-    "region" : "us-east-1",
-    "profile" : "default",
-    "s3-bucket" : "mybucketaws456",
-    "template"  : "serverless.template",
-    "stack-name" : "CoreApi"
-}
