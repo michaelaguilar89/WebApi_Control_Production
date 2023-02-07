@@ -1,0 +1,173 @@
+[33mcommit ae2b8b36b2e9182d5153ea4efb518ae9c446453c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Tue Feb 7 16:34:41 2023 -0600
+
+    adding final commit v1 before push to azure
+
+[33mcommit 435525e551f968adaed1982c43a47b9f7a69a2f1[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Thu Jan 26 15:45:23 2023 -0600
+
+    agregando workflows para github
+
+[33mcommit 82cb200b4b8854b109bce46de04ae4a9faf534ab[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Thu Jan 26 14:30:59 2023 -0600
+
+    eliminando configuraciones para publicar en aws
+
+[33mcommit ab4e2e4634f6f6f106443d5a889bb2d868d4925d[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Wed Jan 25 21:10:39 2023 -0600
+
+    copilando el proyecto
+
+[33mcommit 1d0a89b964539a16f32ebec3b3c491a443301f41[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Wed Jan 25 19:39:15 2023 -0600
+
+    configurando serverless.template
+
+[33mcommit 79140acad6b15e9ba825166abcae37b755dd8c10[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Wed Jan 25 19:24:13 2023 -0600
+
+    agregando DotNetCliToolReference para Amazon.Lambda.Tools
+
+[33mcommit a4327be706b1945e30cbf684fbb3e85464ef2092[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Wed Jan 25 19:15:54 2023 -0600
+
+    agregando class LambdaFuntion
+
+[33mcommit 722cc970f03715b18c0f691a33faadd3bbe9c17d[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Wed Jan 25 19:09:10 2023 -0600
+
+    agregando paquete nuget Amazon.Lambda.AspNetCoreServer
+
+[33mcommit 1b933bbafec498901c279590469cb5b6db6c8ada[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Wed Jan 25 11:58:32 2023 -0600
+
+    finalizando version 1.1
+
+[33mcommit be5a4cd343dd4d5765f966768ca65bda6487c762[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Tue Jan 24 10:13:40 2023 -0600
+
+    actualizando metodo getByDate en controller production
+
+[33mcommit d55ecec5ac05904464c5f9d284693fb7fcfe714d[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Tue Jan 24 00:10:19 2023 -0600
+
+    eliminando metodo getById en controllerProduction para evitar ambiguedad en las rotas del controller
+
+[33mcommit eb2291493174679b017e977a80ca89474f4924ea[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 22:26:32 2023 -0600
+
+    actulizans program.cs para que me permita utilizar cors
+
+[33mcommit 479244c0afbcc22959978bf01d75661548d11888[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 22:06:25 2023 -0600
+
+    configurando el cors
+
+[33mcommit 5f37f12d1f133fed0b55b588e8d97ab131afaf5f[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 20:56:17 2023 -0600
+
+    agregando metodo get
+
+[33mcommit c3521902784e3c65024c608e07cb749a483a295f[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 13:01:23 2023 -0600
+
+    verrion 1.0 terminada
+
+[33mcommit c88d5f45b0c582f185a4bd115a39332e273460e0[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 12:08:42 2023 -0600
+
+    configurando e Crud en el controller
+
+[33mcommit 2a74c63b0dc1dbd090a5ae59e91561225eb03662[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 11:24:39 2023 -0600
+
+    agrego un nuevo injeccion po dependecias para utilizar el Interface y Repository Production
+
+[33mcommit 06c5f59adb3d7ed422f8a2e0c4c9611b5caa10a3[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 11:21:55 2023 -0600
+
+    agregando CRUD a productionRepository
+
+[33mcommit a9d44bb30352815a1ff19ef0a6014a551f8d3da2[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:59:08 2023 -0600
+
+    creando productionRepository
+
+[33mcommit d88ea5c9611c2b14b0fc3fd59097942a665a2ab2[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:57:21 2023 -0600
+
+    agregando interface Production
+
+[33mcommit 0a78c0511632da98b55d2e52193acd0a3ca01588[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:42:26 2023 -0600
+
+    AGREGADO migration update-database
+
+[33mcommit 6bcbd474d2dea7950da566f4a39bc8090bb5f921[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:40:47 2023 -0600
+
+    eliminando EFCORE 7 y agregando EFCORE 6 LTS
+
+[33mcommit 5ee71e210a56cb1434315689a9e4ee89131a1c01[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:21:23 2023 -0600
+
+    agregando por injeccion de dependencias un service que conecte mi DbContext con la cadena de conexion en appSettings.json
+
+[33mcommit f2ef59443c2152423d7948ff587a4405fd3bda0c[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:15:27 2023 -0600
+
+    agregando paquetes nuget
+
+[33mcommit e72873a5218ec9e8d7b1ef032919035c2167b34c[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:12:01 2023 -0600
+
+    configurando DbContext
+
+[33mcommit 2d78370b684e624483960a6f750b305e8a398afd[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:03:53 2023 -0600
+
+    agregando el cadena de conection en appsettigns.json
+
+[33mcommit c44193581a7a6dde77d2bdd02a9defac8843032b[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 10:01:30 2023 -0600
+
+    agregando el modelo clase production
+
+[33mcommit 9a48dcb40cbf7bf0912d6dd6e93a3f80f92acf71[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 09:56:28 2023 -0600
+
+    eliminando weatherForecastController y clase weatherForecast
+
+[33mcommit 7c706ccea9d89c35e734ea040b5b2e29be19f45e[m
+Author: michaelaguilar89 <mchlaguilar051@hotmail.es>
+Date:   Mon Jan 23 09:29:48 2023 -0600
+
+    first commit
